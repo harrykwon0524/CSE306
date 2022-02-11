@@ -1,0 +1,7 @@
+diff --git a/linux b/linux
+index dfd42fa..f40ddce 160000
+--- a/linux
++++ b/linux
+@@ -1 +1 @@
+-Subproject commit dfd42facf1e4ada021b939b4e19c935dcdd55566
++Subproject commit f40ddce88593482919761f74910f42f4b84c004b-dirty
