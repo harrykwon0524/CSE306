@@ -15,7 +15,7 @@
 
 # Command Line History (newest to oldest):
 :wq!
-|2,0,1644565415,,"wq!"
+|2,0,1644607038,,"wq!"
 :t
 |2,0,1644554239,,"t"
 :wq
@@ -72,36 +72,50 @@
 |3,1,36,0,1,0,1644565345,"}"
 
 # File marks:
-'0  23  0  ~/linux/kernel/syss2encrypt.c
-|4,48,23,0,1644565415,"~/linux/kernel/syss2encrypt.c"
-'1  23  11  ~/something/syscall.c
-|4,49,23,11,1644564858,"~/something/syscall.c"
-'2  28  48  ~/something/syscall.c
-|4,50,28,48,1644564704,"~/something/syscall.c"
-'3  27  48  ~/something/syscall.c
-|4,51,27,48,1644564704,"~/something/syscall.c"
-'4  27  0  ~/linux/kernel/syss2encrypt.c
-|4,52,27,0,1644564633,"~/linux/kernel/syss2encrypt.c"
+'0  1  0  ~/linux/kernel/newencrypt.c
+|4,48,1,0,1644607038,"~/linux/kernel/newencrypt.c"
+'1  23  0  ~/linux/kernel/syss2encrypt.c
+|4,49,23,0,1644565415,"~/linux/kernel/syss2encrypt.c"
+'2  23  11  ~/something/syscall.c
+|4,50,23,11,1644564858,"~/something/syscall.c"
+'3  28  48  ~/something/syscall.c
+|4,51,28,48,1644564704,"~/something/syscall.c"
+'4  27  48  ~/something/syscall.c
+|4,52,27,48,1644564704,"~/something/syscall.c"
 '5  27  0  ~/linux/kernel/syss2encrypt.c
 |4,53,27,0,1644564633,"~/linux/kernel/syss2encrypt.c"
-'6  22  21  ~/linux/kernel/syss2encrypt.c
-|4,54,22,21,1644564600,"~/linux/kernel/syss2encrypt.c"
+'6  27  0  ~/linux/kernel/syss2encrypt.c
+|4,54,27,0,1644564633,"~/linux/kernel/syss2encrypt.c"
 '7  22  21  ~/linux/kernel/syss2encrypt.c
 |4,55,22,21,1644564600,"~/linux/kernel/syss2encrypt.c"
-'8  23  20  ~/linux/kernel/syss2encrypt.c
-|4,56,23,20,1644564600,"~/linux/kernel/syss2encrypt.c"
+'8  22  21  ~/linux/kernel/syss2encrypt.c
+|4,56,22,21,1644564600,"~/linux/kernel/syss2encrypt.c"
 '9  23  20  ~/linux/kernel/syss2encrypt.c
 |4,57,23,20,1644564600,"~/linux/kernel/syss2encrypt.c"
 
 # Jumplist (newest first):
+-'  1  0  ~/linux/kernel/newencrypt.c
+|4,39,1,0,1644607038,"~/linux/kernel/newencrypt.c"
 -'  23  0  ~/linux/kernel/syss2encrypt.c
 |4,39,23,0,1644565415,"~/linux/kernel/syss2encrypt.c"
+-'  23  0  ~/linux/kernel/syss2encrypt.c
+|4,39,23,0,1644565415,"~/linux/kernel/syss2encrypt.c"
+-'  27  0  ~/linux/kernel/syss2encrypt.c
+|4,39,27,0,1644565331,"~/linux/kernel/syss2encrypt.c"
 -'  27  0  ~/linux/kernel/syss2encrypt.c
 |4,39,27,0,1644565331,"~/linux/kernel/syss2encrypt.c"
 -'  23  11  ~/something/syscall.c
 |4,39,23,11,1644564858,"~/something/syscall.c"
 -'  23  11  ~/something/syscall.c
 |4,39,23,11,1644564858,"~/something/syscall.c"
+-'  23  11  ~/something/syscall.c
+|4,39,23,11,1644564858,"~/something/syscall.c"
+-'  23  11  ~/something/syscall.c
+|4,39,23,11,1644564858,"~/something/syscall.c"
+-'  28  48  ~/something/syscall.c
+|4,39,28,48,1644564791,"~/something/syscall.c"
+-'  28  48  ~/something/syscall.c
+|4,39,28,48,1644564791,"~/something/syscall.c"
 -'  28  48  ~/something/syscall.c
 |4,39,28,48,1644564791,"~/something/syscall.c"
 -'  28  48  ~/something/syscall.c
@@ -110,6 +124,14 @@
 |4,39,27,48,1644564704,"~/something/syscall.c"
 -'  27  48  ~/something/syscall.c
 |4,39,27,48,1644564704,"~/something/syscall.c"
+-'  27  48  ~/something/syscall.c
+|4,39,27,48,1644564704,"~/something/syscall.c"
+-'  27  48  ~/something/syscall.c
+|4,39,27,48,1644564704,"~/something/syscall.c"
+-'  27  0  ~/linux/kernel/syss2encrypt.c
+|4,39,27,0,1644564633,"~/linux/kernel/syss2encrypt.c"
+-'  27  0  ~/linux/kernel/syss2encrypt.c
+|4,39,27,0,1644564633,"~/linux/kernel/syss2encrypt.c"
 -'  27  0  ~/linux/kernel/syss2encrypt.c
 |4,39,27,0,1644564633,"~/linux/kernel/syss2encrypt.c"
 -'  27  0  ~/linux/kernel/syss2encrypt.c
@@ -120,6 +142,16 @@
 |4,39,23,20,1644564620,"~/linux/kernel/syss2encrypt.c"
 -'  23  20  ~/linux/kernel/syss2encrypt.c
 |4,39,23,20,1644564620,"~/linux/kernel/syss2encrypt.c"
+-'  22  21  ~/linux/kernel/syss2encrypt.c
+|4,39,22,21,1644564620,"~/linux/kernel/syss2encrypt.c"
+-'  23  20  ~/linux/kernel/syss2encrypt.c
+|4,39,23,20,1644564620,"~/linux/kernel/syss2encrypt.c"
+-'  23  20  ~/linux/kernel/syss2encrypt.c
+|4,39,23,20,1644564620,"~/linux/kernel/syss2encrypt.c"
+-'  23  20  ~/linux/kernel/syss2encrypt.c
+|4,39,23,20,1644564600,"~/linux/kernel/syss2encrypt.c"
+-'  23  20  ~/linux/kernel/syss2encrypt.c
+|4,39,23,20,1644564600,"~/linux/kernel/syss2encrypt.c"
 -'  23  20  ~/linux/kernel/syss2encrypt.c
 |4,39,23,20,1644564600,"~/linux/kernel/syss2encrypt.c"
 -'  23  20  ~/linux/kernel/syss2encrypt.c
@@ -132,6 +164,18 @@
 |4,39,26,0,1644564583,"~/linux/kernel/syss2encrypt.c"
 -'  26  0  ~/linux/kernel/syss2encrypt.c
 |4,39,26,0,1644564583,"~/linux/kernel/syss2encrypt.c"
+-'  26  0  ~/linux/kernel/syss2encrypt.c
+|4,39,26,0,1644564583,"~/linux/kernel/syss2encrypt.c"
+-'  26  0  ~/linux/kernel/syss2encrypt.c
+|4,39,26,0,1644564583,"~/linux/kernel/syss2encrypt.c"
+-'  26  0  ~/linux/kernel/syss2encrypt.c
+|4,39,26,0,1644564583,"~/linux/kernel/syss2encrypt.c"
+-'  26  0  ~/linux/kernel/syss2encrypt.c
+|4,39,26,0,1644564583,"~/linux/kernel/syss2encrypt.c"
+-'  26  0  ~/linux/kernel/syss2encrypt.c
+|4,39,26,0,1644564549,"~/linux/kernel/syss2encrypt.c"
+-'  26  0  ~/linux/kernel/syss2encrypt.c
+|4,39,26,0,1644564549,"~/linux/kernel/syss2encrypt.c"
 -'  26  0  ~/linux/kernel/syss2encrypt.c
 |4,39,26,0,1644564549,"~/linux/kernel/syss2encrypt.c"
 -'  26  0  ~/linux/kernel/syss2encrypt.c
@@ -150,6 +194,56 @@
 |4,39,15,1,1644564429,"~/linux/kernel/syss2encrypt.c"
 -'  15  1  ~/linux/kernel/syss2encrypt.c
 |4,39,15,1,1644564429,"~/linux/kernel/syss2encrypt.c"
+-'  15  1  ~/linux/kernel/syss2encrypt.c
+|4,39,15,1,1644564429,"~/linux/kernel/syss2encrypt.c"
+-'  15  1  ~/linux/kernel/syss2encrypt.c
+|4,39,15,1,1644564429,"~/linux/kernel/syss2encrypt.c"
+-'  15  1  ~/linux/kernel/syss2encrypt.c
+|4,39,15,1,1644564429,"~/linux/kernel/syss2encrypt.c"
+-'  15  1  ~/linux/kernel/syss2encrypt.c
+|4,39,15,1,1644564429,"~/linux/kernel/syss2encrypt.c"
+-'  15  1  ~/linux/kernel/syss2encrypt.c
+|4,39,15,1,1644564429,"~/linux/kernel/syss2encrypt.c"
+-'  15  1  ~/linux/kernel/syss2encrypt.c
+|4,39,15,1,1644564429,"~/linux/kernel/syss2encrypt.c"
+-'  15  1  ~/linux/kernel/syss2encrypt.c
+|4,39,15,1,1644564429,"~/linux/kernel/syss2encrypt.c"
+-'  21  31  ~/something/syscall.c
+|4,39,21,31,1644564395,"~/something/syscall.c"
+-'  21  31  ~/something/syscall.c
+|4,39,21,31,1644564395,"~/something/syscall.c"
+-'  21  31  ~/something/syscall.c
+|4,39,21,31,1644564395,"~/something/syscall.c"
+-'  21  31  ~/something/syscall.c
+|4,39,21,31,1644564395,"~/something/syscall.c"
+-'  21  31  ~/something/syscall.c
+|4,39,21,31,1644564395,"~/something/syscall.c"
+-'  21  31  ~/something/syscall.c
+|4,39,21,31,1644564395,"~/something/syscall.c"
+-'  21  31  ~/something/syscall.c
+|4,39,21,31,1644564395,"~/something/syscall.c"
+-'  21  31  ~/something/syscall.c
+|4,39,21,31,1644564395,"~/something/syscall.c"
+-'  21  31  ~/something/syscall.c
+|4,39,21,31,1644564395,"~/something/syscall.c"
+-'  21  31  ~/something/syscall.c
+|4,39,21,31,1644564395,"~/something/syscall.c"
+-'  21  31  ~/something/syscall.c
+|4,39,21,31,1644564395,"~/something/syscall.c"
+-'  21  31  ~/something/syscall.c
+|4,39,21,31,1644564395,"~/something/syscall.c"
+-'  21  31  ~/something/syscall.c
+|4,39,21,31,1644564395,"~/something/syscall.c"
+-'  21  31  ~/something/syscall.c
+|4,39,21,31,1644564395,"~/something/syscall.c"
+-'  21  31  ~/something/syscall.c
+|4,39,21,31,1644564395,"~/something/syscall.c"
+-'  21  31  ~/something/syscall.c
+|4,39,21,31,1644564395,"~/something/syscall.c"
+-'  21  31  ~/something/syscall.c
+|4,39,21,31,1644564395,"~/something/syscall.c"
+-'  21  31  ~/something/syscall.c
+|4,39,21,31,1644564395,"~/something/syscall.c"
 -'  21  31  ~/something/syscall.c
 |4,39,21,31,1644564395,"~/something/syscall.c"
 -'  21  31  ~/something/syscall.c
@@ -200,102 +294,12 @@
 |4,39,21,25,1644564364,"~/something/syscall.c"
 -'  21  25  ~/something/syscall.c
 |4,39,21,25,1644564364,"~/something/syscall.c"
--'  21  25  ~/something/syscall.c
-|4,39,21,25,1644564364,"~/something/syscall.c"
--'  21  25  ~/something/syscall.c
-|4,39,21,25,1644564364,"~/something/syscall.c"
--'  21  25  ~/something/syscall.c
-|4,39,21,25,1644564364,"~/something/syscall.c"
--'  21  25  ~/something/syscall.c
-|4,39,21,25,1644564364,"~/something/syscall.c"
--'  21  25  ~/something/syscall.c
-|4,39,21,25,1644564364,"~/something/syscall.c"
--'  21  25  ~/something/syscall.c
-|4,39,21,25,1644564364,"~/something/syscall.c"
--'  21  25  ~/something/syscall.c
-|4,39,21,25,1644564364,"~/something/syscall.c"
--'  21  25  ~/something/syscall.c
-|4,39,21,25,1644564364,"~/something/syscall.c"
--'  21  25  ~/something/syscall.c
-|4,39,21,25,1644564364,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564334,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564327,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564327,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564327,"~/something/syscall.c"
--'  10  20  ~/something/syscall.c
-|4,39,10,20,1644564327,"~/something/syscall.c"
 
 # History of marks within files (newest to oldest):
+
+> ~/linux/kernel/newencrypt.c
+	*	1644607036	0
+	"	1	0
 
 > ~/linux/kernel/syss2encrypt.c
 	*	1644565413	0

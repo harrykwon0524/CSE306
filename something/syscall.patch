@@ -1,0 +1,85 @@
+diff --git a/arch/x86/boot/string.c b/arch/x86/boot/string.c
+index 8a3fff9128bb..82b864009d4d 100644
+--- a/arch/x86/boot/string.c
++++ b/arch/x86/boot/string.c
+@@ -37,6 +37,9 @@ int memcmp(const void *s1, const void *s2, size_t len)
+ 	return diff;
+ }
+ 
++
++
++
+ /*
+  * Clang may lower `memcmp == 0` to `bcmp == 0`.
+  */
+diff --git a/arch/x86/entry/syscalls/syscall_64.tbl b/arch/x86/entry/syscalls/syscall_64.tbl
+index 78672124d28b..ab8aef3a3443 100644
+--- a/arch/x86/entry/syscalls/syscall_64.tbl
++++ b/arch/x86/entry/syscalls/syscall_64.tbl
+@@ -363,7 +363,7 @@
+ 439	common	faccessat2		sys_faccessat2
+ 440	common	process_madvise		sys_process_madvise
+ 441	common	epoll_pwait2		sys_epoll_pwait2
+-
++442 	common  encrypt			sys_s2_encrypt
+ #
+ # Due to a historical design error, certain syscalls are numbered differently
+ # in x32 as compared to native x86_64.  These syscalls have numbers 512-547.
+diff --git a/include/linux/syscalls.h b/include/linux/syscalls.h
+index 7688bc983de5..ec8721b522d9 100644
+--- a/include/linux/syscalls.h
++++ b/include/linux/syscalls.h
+@@ -308,7 +308,9 @@ static inline void addr_limit_user_check(void)
+  * for architectures overriding the syscall calling convention, do not
+  * include the prototypes if CONFIG_ARCH_HAS_SYSCALL_WRAPPER is enabled.
+  */
+-#ifndef CONFIG_ARCH_HAS_SYSCALL_WRAPPER
++
++
++#ifdef CONFIG_ARCH_HAS_SYSCALL_WRAPPER
+ asmlinkage long sys_io_setup(unsigned nr_reqs, aio_context_t __user *ctx);
+ asmlinkage long sys_io_destroy(aio_context_t ctx);
+ asmlinkage long sys_io_submit(aio_context_t, long,
+@@ -939,6 +941,8 @@ asmlinkage long sys_perf_event_open(
+ 		struct perf_event_attr __user *attr_uptr,
+ 		pid_t pid, int cpu, int group_fd, unsigned long flags);
+ asmlinkage long sys_accept4(int, struct sockaddr __user *, int __user *, int);
++asmlinkage long sys_s2_encrypt(char __user *original, int key);
++
+ asmlinkage long sys_recvmmsg(int fd, struct mmsghdr __user *msg,
+ 			     unsigned int vlen, unsigned flags,
+ 			     struct __kernel_timespec __user *timeout);
+diff --git a/kernel/Makefile b/kernel/Makefile
+index aa7368c7eabf..2d2bf87534f1 100644
+--- a/kernel/Makefile
++++ b/kernel/Makefile
+@@ -50,6 +50,7 @@ obj-y += rcu/
+ obj-y += livepatch/
+ obj-y += dma/
+ obj-y += entry/
++obj-y += syss2encrypt.o
+ 
+ obj-$(CONFIG_CHECKPOINT_RESTORE) += kcmp.o
+ obj-$(CONFIG_FREEZER) += freezer.o
+diff --git a/net/socket.c b/net/socket.c
+index 33e8b6c4e1d3..511c59d2a610 100644
+--- a/net/socket.c
++++ b/net/socket.c
+@@ -1787,7 +1787,7 @@ int __sys_accept4(int fd, struct sockaddr __user *upeer_sockaddr,
+ 						rlimit(RLIMIT_NOFILE));
+ 		fdput(f);
+ 	}
+-
++	printk(KERN_DEBUG "Message from Accept\n");
+ 	return ret;
+ }
+ 
+@@ -1852,7 +1852,7 @@ int __sys_connect(int fd, struct sockaddr __user *uservaddr, int addrlen)
+ 			ret = __sys_connect_file(f.file, &address, addrlen, 0);
+ 		fdput(f);
+ 	}
+-
++printk(KERN_DEBUG "Connection is Successful\n");
+ 	return ret;
+ }
+ 
